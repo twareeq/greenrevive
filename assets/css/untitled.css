@@ -1,0 +1,15 @@
+.home-product-images {
+  display: block;
+  padding-bottom: 40px;
+}
+
+.grid-section-seamless {
+  display: flex;
+  width: 100%;
+}
+
+.grid-6-s {
+  display: flex;
+  flex: 1 16.5%;
+}
+
