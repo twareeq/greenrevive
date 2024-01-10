@@ -37,43 +37,46 @@
 }
 
 @media (max-width: 600px) {
+  .headImage {
+    height: 200px;
+    width: 200px;
+  }
+
   .myfoods {
     height: 200px;
   }
 
   .foodContainer {
-    width: 200px;
+    width: 175px;
     height: 200px;
-    margin-left: 5%;
+    text-align: center;
+  }
+  
+  .foodRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
-  .headImage {
-    height: 200px;
-    width: 200px;
-  }
 }
-/* @media (max-width: 500px) {
-  .myfoods {
+
+/* @media (max-width: 400) {
+  .foodContainer {
+    width: 80px;
     height: 200px;
-    width: 150px;
+    margin: 0;
+    padding: 0;
   }
 
-  .overlay {
-    width: 150px;
-  }
-} */
-
-/* @media(max-width: 800px ) {
-  .aboutme {
-    padding-bottom: 0;
-  }
-  .home-product-images{
-    padding-top: 0;
-    padding-bottom: 10px;
-  }
   .myfoods {
-    height: 150px;
-    width: 100px;
-    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    width: 80px;
+  }
+
+  .foodRow {
+    padding: 0;
+    margin: 0;
   }
 } */
