@@ -9,16 +9,48 @@
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+}
+
+.foodContainer {
+  height: 350px;
+  object-fit: cover;
+}
+
+.myfoods {
+  height: 350px;
+  width: 100%;
 }
 
 .position-relative:hover .overlay {
   opacity: 1;
+}
+
+.headImage {
+  height: 350px;
+  width: 350px;
+}
+
+@media (max-width: 600px) {
+  .myfoods {
+    height: 200px;
+  }
+
+  .foodContainer {
+    width: 200px;
+    height: 200px;
+    margin-left: 5%;
+  }
+
+  .headImage {
+    height: 200px;
+    width: 200px;
+  }
 }
 /* @media (max-width: 500px) {
   .myfoods {
