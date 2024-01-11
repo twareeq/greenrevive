@@ -1,7 +1,23 @@
+header {
+  height: 100%;
+}
+
 .home-product-images {
   display: block;
   padding-bottom: 40px;
 }
+
+.firstImg {
+  padding-left: 15%;
+}
+
+.headImage {
+  height: 400px;
+  width: 350px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
 
 .overlay {
   position: absolute;
@@ -25,16 +41,18 @@
 .myfoods {
   height: 350px;
   width: 100%;
+  object-fit: cover;
+}
+
+.text-white {
+  font-size: larger;
+  font-weight: bold;
 }
 
 .position-relative:hover .overlay {
   opacity: 1;
 }
 
-.headImage {
-  height: 350px;
-  width: 350px;
-}
 
 @media (max-width: 600px) {
   .headImage {
@@ -59,14 +77,20 @@
     text-align: center;
   }
 }
-/* @media (max-width: 500px) {
-  .myfoods {
+@media (max-width: 1314px) {
+
+ 
+.firstImg {
+  padding-left: 2%;
+}
+
+  /* .myfoods {
     height: 200px;
     width: 150px;
   }
 
   .overlay {
     width: 150px;
-  }
-} */
+  } */
+}
 
