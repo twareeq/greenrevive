@@ -1,5 +1,5 @@
 header {
-  height: 100%;
+  height: 95%;
 }
 
 .home-product-images {
@@ -51,6 +51,14 @@ header {
 
 .position-relative:hover .overlay {
   opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.card-text {
+  text-align: justify;
 }
 
 

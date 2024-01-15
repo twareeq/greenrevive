@@ -35,29 +35,49 @@
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col mb-5"><img class="rounded img-fluid shadow" src="assets/img/foods/maize5.jpg"></div>
+                <div class="col mb-5"><img class="rounded img-fluid shadow" src="assets/img/services/market2.jpg"></div>
                 <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                     <div>
-                        <h5 class="fw-bold">Buy Our Products</h5>
-                        <p class="text-muted mb-4">We offer good quality products that you can buy from us at a given prices. Contact us now for more information or call 0881578331.</p><button class="btn btn-primary shadow" type="button">Learn more</button>
+                        <h5 class="fw-bold">Markets</h5>
+                        <p class="text-muted mb-4">We are providing a close formal markets to smallholder farmers so that they can make a sound profit from thir hard work.</p>
+                        <p id="marketsText" class="text-muted card-text mb-4 hidden">Live hood equality affects 50 to 70 percent of Malawians and due to the challenge of live hood equity, small holder farmers fail to produce enough food to supply or satisfy each and every house hold due limited finances that fail to enable them access more productive inputs for their limited land. This result as they fail to access formal markets to transportation cost and other issues hence they sell the products to vendors who pay unreasonable low price. close formal market to this rural small holder farmers, help the farmers to make a sound profit for their hard working and improve their livelihood equity.</p>
+                        <button id="marketsBtn" class="btn btn-primary shadow" type="button" onclick="toggleText('markets')">Read more</button>
+                   
                     </div>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col order-md-last mb-5"><img class="rounded img-fluid shadow" src="assets/img/foods/pease.jpg"></div>
+                <div class="col order-md-last mb-5"><img class="rounded img-fluid shadow" src="assets/img/services/skill.jpg"></div>
                 <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                     <div>
-                        <h5 class="fw-bold">Free Delivery</h5>
-                        <p class="text-muted mb-4">Once you buy products from us, we are determined to satisfy our customers with free delivery anywhere around Lilongwe.</p><button class="btn btn-primary shadow" type="button">Learn more</button>
+                        <h5 class="fw-bold">Skill Development</h5>
+                        <p class="text-muted mb-4">We are providing a package and training on modern ways of production to smallholder farmers so that they can improve their productivity.</p>
+                        <p id="skillText" class="text-muted card-text mb-4 hidden">To increase the productivity, we offer training to the farmers on modern ways for producing crops so that they can produce more on the limited land they have. Not only that but also other methods of dealing with climate change challenges like pest, soil salinity and others</p>
+                        <button id="skillBtn" class="btn btn-primary shadow" type="button" onclick="toggleText('skill')">Read more</button>
+                   
                     </div>
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col mb-5"><img class="rounded img-fluid shadow" src="assets/img/foods/grunuts.jpg"></div>
+                <div class="col mb-5"><img class="rounded img-fluid shadow" src="assets/img/services/storage3.JPG"></div>
                 <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                     <div>
-                        <h5 class="fw-bold">Find Markets To Sell Your Products</h5>
-                        <p class="text-muted mb-4">We are experts in finding markets for your products, either if you want to buy or sell that corresponding product.</p><button class="btn btn-primary shadow" type="button">Contact Us</button>
+                        <h5 class="fw-bold">Poper Storage</h5>
+                        <p class="text-muted mb-4">We provide proper storage as a means of reducing post-harvest loss in order to increase food supply on the market.</p>
+                        <p id="storageText" class="text-muted card-text mb-4 hidden">due to lack of knowledge and proper infrastructure of the small holder farmers to prevent losses due to pest, spoilage and improper storage. Most of the food that is harvested is put into waste rather than consumption. This result into low productivity, we offer proper storage of the products after purchasing from the farmers to increase the productivity and food supply on the market.</p>
+                        <button id="storageBtn" class="btn btn-primary shadow" type="button" onclick="toggleText('storage')">Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+                <div class="col order-md-last mb-5"><img style="object-fit: cover;" class="rounded img-fluid shadow" src="assets/img/services/climate.JPG"></div>
+                <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
+                    <div>
+                        <h5 class="fw-bold">Climate Change & Agriculture Solutions</h5>
+                        <p class="text-muted mb-4">We provide climate change smart agriculture solutions to smallholder farmers to increase their productivity.</p>
+                        <p id="climateText" class="text-muted card-text mb-4 hidden">Climate change pose much impact on food supply because of high dependence on drought sensitive crops. Drought produces a conducive environment for breeding and multiplication of pest. Pest also play a big role in reducing the productivity of agriculture products. We provide solutions to climate changes that lead to poor productivity. </p>
+                            <button id="climateBtn" class="btn btn-primary shadow" type="button" onclick="toggleText('climate')">Read more</button>
+                       
                     </div>
                 </div>
             </div>
@@ -118,6 +138,20 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bold-and-bright.js"></script>
+    <script>
+        function toggleText(service) {
+            var additionalText = document.getElementById(service + "Text");
+            var readMoreBtn = document.getElementById(service + "Btn");
+    
+            additionalText.classList.toggle("hidden");
+    
+            // Change button text based on visibility
+            if (additionalText.classList.contains("hidden")) {
+                readMoreBtn.innerText = "Read more";
+            } else {
+                readMoreBtn.innerText = "Read less";
+            }
+        }
+    </script>
 </body>
-
 </html>
