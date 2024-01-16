@@ -84,6 +84,10 @@ header {
     justify-content: center;
     text-align: center;
   }
+  
+  .exist-txt {
+    text-align: justify;
+  }
 }
 @media (max-width: 1314px) {
 
