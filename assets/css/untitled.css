@@ -1,5 +1,39 @@
-header {
-  height: 95%;
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Noto+Sans+JP:wght@200&display=swap');
+.brandName {
+  font-family: 'Lemon', serif;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+/* 
+carousel-caption top-0 mt-5 d-none d-md-block
+carousel-caption top-0 mt-5 d-none d-md-block
+carousel-caption top-0 mt-5 d-none d-md-block */
+
+.carousel-caption {
+  top: 0;
+  margin-top: 45px;
+  display: block;
+}
+
+.brandQuote {
+  font-size: 50px;
+}
+.text-success {
+  color: green;
+}
+
+
+.c-item {
+  height: 500px;
+}
+
+.c-image {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.50);
+}
+
+#mainNav {
+  background-color: transparent;
 }
 
 .home-product-images {
@@ -61,8 +95,23 @@ header {
   text-align: justify;
 }
 
+.custom-toggler .navbar-toggler-icon {
+  color: white;
+}
 
-@media (max-width: 600px) {
+
+@media (max-width: 767px) {
+
+  .carousel-caption {
+    top: 70px;
+    margin-top: 45px;
+    display: block;
+  }
+  
+  .brandQuote {
+    font-size: 35px;
+  }
+
   .headImage {
     height: 200px;
     width: 200px;
