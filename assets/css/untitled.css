@@ -138,12 +138,27 @@ carousel-caption top-0 mt-5 d-none d-md-block */
     text-align: justify;
   }
 }
-@media (max-width: 1314px) {
+@media (min-width: 1314px) {
 
  
 .firstImg {
   padding-left: 2%;
 }
+
+.c-item {
+  height: 600px;
+}
+
+.carousel-caption {
+  top: 70px;
+  margin-top: 45px;
+  display: block;
+}
+
+.brandQuote {
+  font-size: 55px;
+}
+
 
   /* .myfoods {
     height: 200px;
